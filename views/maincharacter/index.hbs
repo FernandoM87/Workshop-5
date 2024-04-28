@@ -1,0 +1,22 @@
+<h2>Main character</h2>
+
+<p>
+    <a href="/maincharacter/new">Create new</a>
+</p>
+
+<div class="item-grid">
+
+    {{#each maincharacter}}
+    <article class="item">
+        <div>
+            <b>{{name}}</b> <br>
+            <i>{{description}}</i>
+        </div>
+
+        <a href="/maincharacter/{{_id}}">Show</a> <br>
+
+        <a href="/maincharacter/{{_id}}/edit">Edit</a>
+    </article>
+    {{/each}}
+    
+</div>

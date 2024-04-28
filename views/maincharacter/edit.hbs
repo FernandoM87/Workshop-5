@@ -1,0 +1,11 @@
+<h2>Edit main character</h2>
+
+<form action="/maincharacter/{{_id}}/edit" method="post">
+    <input type="text" name="name" placeholder="Name" value="{{name}}"> <br>
+    <textarea name="description" placeholder="Description">{{description}}</textarea> <br>
+    <input type="submit" value="Save" class="btn">
+</form>
+
+<form action="/maincharacter/{{_id}}/delete" method="post">
+    <input type="submit" value="Delete" class="btn delete-btn">
+</form>

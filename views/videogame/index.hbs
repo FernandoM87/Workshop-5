@@ -1,0 +1,20 @@
+<h2>Video Game</h2>
+
+<p>
+    <a href="/videogame/new">Create new</a>
+</p>
+
+<div class="item-grid">
+
+    {{#each videogame}}
+    <article class="item">
+        <div>
+            <b>{{title}}</b> <br>
+            <i>{{description}}</i>
+        </div>
+
+        <a href="/videogame/{{_id}}">Show</a>
+    </article>
+    {{/each}}
+    
+</div>
